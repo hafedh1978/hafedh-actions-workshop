@@ -32,5 +32,6 @@ jobs:
     # ... rest of the node.js.yml
     - run: npm run test
     - uses: davelosert/vitest-coverage-report-action@v1
+    if: always()
       with:
         vite-config-path: vite.config.ts
